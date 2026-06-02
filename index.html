@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); min-height: 100vh; display: flex; justify-content: center; align-items: center; color: #fff; }
         .card { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 40px; max-width: 500px; width: 90%; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); }
-        h1 { font-size: 28px; margin-bottom: 10px; background: linear-gradient(90deg, #00d2ff, #3a7bd5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h1 { font-size: 28px; margin-bottom: 10px; background: linear-gradient(90deg, #00d2ff, #3a7bd5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; }
         .status { display: inline-block; padding: 6px 16px; border-radius: 20px; background: rgba(0,210,255,0.2); border: 1px solid #00d2ff; font-size: 14px; margin: 15px 0; }
         .info { margin: 20px 0; font-size: 14px; color: #ccc; line-height: 1.8; }
         .info span { color: #00d2ff; }
@@ -35,7 +35,7 @@
         <div class="time" id="time"></div>
     </div>
     <script>
-        function updateTime() { document.getElementById('time').innerText = 'Server time: ' + new Date().toLocaleString('id-ID'); }
+        function updateTime() { document.getElementById('time').innerText = 'Local time: ' + new Date().toLocaleString('id-ID'); }
         updateTime(); setInterval(updateTime, 1000);
     </script>
 </body>
